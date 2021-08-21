@@ -1,0 +1,46 @@
+.home {
+    margin-top: 5.5rem;
+    margin-bottom: 10rem;
+
+    @media (max-width: $md2) {
+        margin-top: 2rem;
+    }
+
+    // .home__body
+    &__body {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $md2) {
+            flex-direction: column;
+        }
+    }
+
+    // .home__image
+    &__image {
+        svg {
+            display: block;
+            max-width: 100%;
+            height: auto;
+
+            path {
+                cursor: pointer;
+            }
+        }
+
+        @media (max-width: $md2) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    // .home__icon
+    &__icon {
+        path {
+            opacity: 0;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

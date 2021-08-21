@@ -1,0 +1,126 @@
+.footer {
+    width: 100%;
+    background-color: $grey;
+
+    // .footer__wrapper
+    &__wrapper {
+        min-height: 17.1rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $md1) {
+            padding: 1rem 0;
+
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    }
+
+    // .footer__left
+    &__left {
+        display: flex;
+
+        @media (max-width: $md2) {
+            padding-bottom: 3rem;
+        }
+
+        @media (max-width: $md3) {
+            flex-direction: column;
+            align-items: center;
+
+            gap: 2rem;
+        }
+    }
+
+    // .footer__left-logo
+    &__left-logo {
+        margin-right: 3.7rem;
+
+        @media (max-width: $md3) {
+            max-width: 65px;
+            margin-right: 0;
+        }
+    }
+
+    // .footer__left-contact
+    &__left-contact {
+        margin-right: 6rem;
+        justify-content: center;
+
+        @media (max-width: $md3) {
+            margin-right: 0;
+        }
+    }
+
+    // .footer__left-social
+    &__left-social {
+        align-items: center;
+    }
+}
+
+.icon-facebook {
+    @media (any-hover: hover) {
+        &:hover {
+            color: darken($blue, 25%);
+        }
+    }
+}
+.icon-instagram {
+    @media (any-hover: hover) {
+        &:hover {
+            color: lighten(purple, 20%);
+        }
+    }
+}
+.icon-twitter {
+    @media (any-hover: hover) {
+        &:hover {
+            color: darken($blue, 3%);
+        }
+    }
+}
+.icon-youtube {
+    @media (any-hover: hover) {
+        &:hover {
+            color: lighten(red, 20%);
+        }
+    }
+}
+
+.footer-nav {
+    // .footer-nav__list
+    &__list {
+        max-width: 50rem;
+
+        display: flex;
+        align-items: center;
+
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        @media (max-width: $md2) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    // .footer-nav__link
+    &__link {
+        font-size: 1.6rem;
+        line-height: 19 / 16 * 100%;
+        color: $text;
+        text-decoration: underline;
+
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        @media (max-width: $md1) {
+            font-size: 1.9rem;
+        }
+    }
+}

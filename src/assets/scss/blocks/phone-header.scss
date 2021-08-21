@@ -1,0 +1,45 @@
+.phone-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &_burger {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    &_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        a {
+            @media (max-width: $md1) {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: $md3) {
+            align-items: center;
+        }
+    }
+
+    @media (max-width: $md3) {
+        display: none;
+    }
+
+    // .phone-header__name
+    &__name {
+        font-size: 1.4rem;
+        line-height: 16 / 14 * 100%;
+
+        margin-bottom: 0.4rem;
+    }
+    // .phone-header__value
+    &__value {
+        font-size: 1.7rem;
+        font-weight: bold;
+        line-height: 20 / 17 * 100%;
+    }
+}

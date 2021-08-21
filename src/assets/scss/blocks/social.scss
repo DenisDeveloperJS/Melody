@@ -1,0 +1,15 @@
+.social {
+    display: flex;
+    gap: 1.5rem;
+    // .social__item
+    &__item {
+        font-size: 2rem;
+        color: $darkGrey;
+
+        transition: 0.3s ease-in color;
+
+        @media (max-width: $md1) {
+            font-size: 2.5rem;
+        }
+    }
+}

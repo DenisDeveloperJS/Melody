@@ -1,0 +1,39 @@
+.menu {
+    display: flex;
+    align-items: center;
+    max-width: 67rem;
+
+    // .menu__list
+    &__list {
+        display: flex;
+        gap: 6rem;
+
+        @media (max-width: $md1) {
+            display: none;
+        }
+
+        @media (max-width: 1200px) {
+            gap: 4rem;
+        }
+    }
+
+    // .menu__link
+    &__link {
+        display: block;
+        height: 101%;
+        padding: 0.9rem 1.6rem;
+
+        font-size: 1.6rem;
+        line-height: 19 / 16 * 100%;
+        text-align: center;
+
+        transition: 0.3s ease-in all;
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $blue;
+                text-decoration: none;
+            }
+        }
+    }
+}

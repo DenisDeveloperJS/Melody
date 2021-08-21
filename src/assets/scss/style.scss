@@ -1,0 +1,49 @@
+@import '_vars';
+@import 'vendor/reset';
+@import 'vendor/fonts';
+
+// Подключение иконочных шрифтов
+@import 'vendor/iconfonts';
+
+// Обнуление
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+._stop-scroll {
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%; // Адаптивный шрифт
+}
+
+body {
+    background-color: $white; // Стандартный задний фон
+    color: $text; // Стандартный цвет шрифта
+    font-size: 1.4rem; // Стандартный размер шрифта
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'BebasNeue', 'Liberation Sans',
+        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; // Подлкюченые шрифты
+    line-height: 15 / 14 * 100%;
+}
+
+/* Blocks */
+
+@import 'blocks/header';
+@import 'blocks/container';
+@import 'blocks/btn';
+@import 'blocks/phone-header';
+@import 'blocks/menu';
+@import 'blocks/mobile-nav';
+@import 'blocks/home';
+@import 'blocks/select-floor';
+@import 'blocks/footer';
+@import 'blocks/social';
+@import 'blocks/modal';
+@import 'blocks/title';
+@import 'blocks/apartments';
