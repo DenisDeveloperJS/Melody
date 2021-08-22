@@ -40,7 +40,7 @@ document.addEventListener('keydown', e => {
 	}
 });
 
-modalTitle2.addEventListener('click', showHideApartamets);
+// modalTitle2.addEventListener('click', showHideApartamets);
 selectDloorWatchHome.addEventListener('click', openModal);
 modalClose.addEventListener('click', closeModal);
 

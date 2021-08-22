@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .wrapper {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    padding: 4rem;
+    background-color: rgb(38, 33, 44);
+} */
+
+/* .block {
+    background-color: grey;
+    border-radius: 1rem;
+} */
+
+.spoller._init .spoller__title {
+    cursor: pointer;
+}
+
+.spoller._init .spoller__title {
+    padding: 10px 40px 10px 10px;
+}
+
+.spoller._init .spoller__title {
+    cursor: pointer;
+}
+
+.spoller._init .spoller__title::before,
+.spoller._init .spoller__title::after {
+    content: '';
+
+    /* Менять размер крестика/плюсика */
+    width: 20px;
+    height: 1px;
+
+    background-color: #000;
+
+    position: absolute;
+
+    right: 2px;
+    top: 25px;
+
+    transition: 0.3s ease transform;
+}
+
+.spoller._init .spoller__title::after {
+    transform: rotate(-90deg);
+}
+
+.spoller._init .spoller__title._active::after {
+    transform: rotate(0deg);
+}
+
+.spoller__title {
+    position: relative;
+    // width: 100%;
+
+    /* border: none;
+    background-color: transparent;
+    color: yellow;
+
+    font-weight: bold;
+    font-size: 1.1rem; */
+}
+
+/* .spoller__text {
+    color: #c4c4c4;
+    font-size: 1.5rem;
+
+    margin-bottom: 2rem;
+} */
+
+/* .spoller__table {
+    border: solid;
+} */
